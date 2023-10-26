@@ -11,18 +11,23 @@ Before using this script, make sure you have the following dependencies installe
 
 ## How It Works
 
-1. The script recursively scans the specified directory for files with the `.ts` extension.
-2. When a `.ts` file is found, it uses the `Fluent-FFmpeg` library to convert it to the `.mp4` format with the same video and audio codecs (copy mode).
-3. The converted file is saved in the same directory with the same name but with the `.mp4` extension.
+The script will start processing files in the "FILES" directory inside the projects ROOT and its subdirectories, converting each `.ts` file to `.mp4`. The converted files will be saved in the same locations with the `.mp4` extension.
 
-## Usage
+**Note:** Make sure you have backup copies of your original files since the script will overwrite existing `.mp4` files with the same name.
 
-1. Clone this repository or download the script.
-2. Install the necessary dependencies by running `npm install` in the script's directory.
-3. Place your `.ts` files in the "Files" directory or any subdirectories within it.
+## Customize
 
-To run the script, execute the following command in your terminal:
+If you want to customize the script further, you can modify the following variables:
 
-```bash
-node script.js
+- `INPUT_EXTENSION`: The input file extension to search for (default is `.ts`).
+- `OUTPUT_EXTENSION`: The output file extension to use for conversion (default is `.mp4`).
+
+You can also adjust the FFmpeg options used for conversion, such as video and audio codecs, by editing the following lines:
+
+```javascript
+var command = ffmpeg(`${directory}/${file}`)
+  .audioCodec("copy")
+  .videoCodec("copy")
+  .format(OUTPUT_EXTENSION)
+  .save(`${directory}/${fileName}.${OUTPUT_EXTENSION}`);
 ```
