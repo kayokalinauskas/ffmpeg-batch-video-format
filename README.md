@@ -9,9 +9,18 @@ Before using this script, make sure you have the following dependencies installe
 - [Node.js](https://nodejs.org/)
 - [FFmpeg](https://www.ffmpeg.org/)
 
-## How It Works
+## USAGE
 
-The script will start processing files in the "FILES" directory inside the projects ROOT and its subdirectories, converting each `.ts` file to `.mp4`. The converted files will be saved in the same locations with the `.mp4` extension.
+Clone github project, then:
+```bash
+npm install
+```
+Place your videos to convert in a folder called 'Files' inside of root project (I will improve this later when I have some time.), and then:
+```bash
+node script.js
+```
+
+The script will start processing files in the "Files" directory inside the projects root and its subdirectories, converting each `.ts` file to `.mp4`. The converted files will be saved in the same locations with the `.mp4` extension.
 
 **Note:** Make sure you have backup copies of your original files since the script will overwrite existing `.mp4` files with the same name.
 
