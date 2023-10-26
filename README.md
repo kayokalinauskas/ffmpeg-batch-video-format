@@ -7,7 +7,7 @@ This Node.js script is designed to recursively traverse a directory and its subd
 Before using this script, make sure you have the following dependencies installed:
 
 - [Node.js](https://nodejs.org/)
-- [Fluent-FFmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)
+- [FFmpeg](https://www.ffmpeg.org/)
 
 ## How It Works
 
