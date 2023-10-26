@@ -1,6 +1,6 @@
 # Node.js Batch Video Format Conversion Script
 
-This Node.js script is designed to recursively traverse a directory and its subdirectories, converting video files with the `.ts` extension into the `.mp4` format. It utilizes the popular [Fluent-FFmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) library for video format conversion.
+This Node.js script is designed to recursively traverse a directory and its subdirectories, converting video files to the desired format, It'll convert and save the file with the same name and location. It utilizes the popular [Fluent-FFmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) library for video format conversion.
 
 ## Prerequisites
 
@@ -15,6 +15,7 @@ Clone github project, then:
 ```bash
 npm install
 ```
+
 Place your videos to convert in a folder called 'Files' inside of the project's root folder (I will improve this later when I have some time.), and then:
 ```bash
 node script.js
