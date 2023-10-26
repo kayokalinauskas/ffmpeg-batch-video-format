@@ -23,7 +23,6 @@ async function readDiretory(directory) {
     }
 
     files.forEach(async (file) => {
-      console.log(await fileIsFolder(file));
       if ((await fileIsFolder(file)) === true) {
         readDiretory(`${directory}/${file}`);
         return 0;
