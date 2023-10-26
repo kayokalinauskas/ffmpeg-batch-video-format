@@ -15,7 +15,7 @@ Clone github project, then:
 ```bash
 npm install
 ```
-Place your videos to convert in a folder called 'Files' inside of root project (I will improve this later when I have some time.), and then:
+Place your videos to convert in a folder called 'Files' inside of the project's root folder (I will improve this later when I have some time.), and then:
 ```bash
 node script.js
 ```
