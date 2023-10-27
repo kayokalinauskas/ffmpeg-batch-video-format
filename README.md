@@ -9,7 +9,7 @@ Before using this script, make sure you have the following dependencies installe
 - [Node.js](https://nodejs.org/)
 - [FFmpeg](https://www.ffmpeg.org/)
 
-## USAGE
+## Usage
 
 Clone github project, then:
 ```bash
